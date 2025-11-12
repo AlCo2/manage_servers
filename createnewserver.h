@@ -21,6 +21,8 @@ private slots:
 
     void on_create_clicked();
 
+signals:
+    void serverCreated();
 private:
     Ui::CreateNewServer *ui;
 };

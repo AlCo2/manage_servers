@@ -37,6 +37,8 @@ void CreateNewServer::on_create_clicked()
         query.bindValue(":password", password);
         if (!query.exec())
             qDebug() << "Insert failed:" << query.lastError().text();
+
+        emit serverCreated();
     }
 
     this->destroy();

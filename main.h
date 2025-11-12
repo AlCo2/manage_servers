@@ -2,6 +2,7 @@
 #define MAIN_H
 
 #include <QMainWindow>
+#include "databasemanager.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -24,6 +25,7 @@ private slots:
 
 private:
     Ui::ServersManager *ui;
+    void setupServersTable();
 };
 
 #endif // MAIN_H
